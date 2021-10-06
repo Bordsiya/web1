@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Лабораторная 1</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/icon.png">
+        <script src="validator.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+           <div class="header">
+                <div class="student_info">
+                    <span>Студент: </span>Бордун Анастасия Владимировна <br>
+                    <span>Группа: </span>P3211 <br>
+                    <span>Вариант: </span>11003 
+                </div>
+
+                <div class="time_info">
+                    <span>Текущее время: <span id="current_time"></span></span> <br>
+                    <span>Время работы скрипта: <span id="working_time"></span></span> <br>
+                </div>
+            
+            </div>
+
+            <div class="content">
+                <div class="input_content">
+                    <div class="input_content_input">
+                        <span>Введите координату x (-3 < x < 5)</span> <br>
+                        <input id="input_x">
+                    </div>
+                    
+                    <div class="input_content_buttons">
+                        <span>Выберите координату y</span> <br>
+                        
+                        <div class="input_content_buttons_columns">
+                            <div class="input_content_buttons_1column">
+                                <button id="btn1" class="btn_structure choose_btn" value="-5">-5</button> <br>
+                                <button id="btn2" class="btn_structure choose_btn" value="-4">-4</button> <br>
+                                <button id="btn3" class="btn_structure choose_btn" value="-3">-3</button> <br>
+                            </div>
+                            
+                            <div class="input_content_buttons_2column">
+                                <button id="btn4" class="btn_structure choose_btn" value="-2">-2</button> <br>
+                                <button id="btn5" class="btn_structure choose_btn" value="-1">-1</button> <br>
+                                <button id="btn6" class="btn_structure choose_btn" value="0">0</button> <br>
+                            </div>
+                            
+                            <div class="input_content_buttons_3column">
+                                <button id="btn7" class="btn_structure choose_btn" value="1">1</button> <br>
+                                <button id="btn8" class="btn_structure choose_btn" value="2">2</button> <br>
+                                <button id="btn9" class="btn_structure choose_btn" value="3">3</button> <br>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="input_content_select">
+                        <span>Выберите константу R</span>
+                        <select id="input_R">
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="send_btn_area">
+                        <button class="btn_structure send_btn" id="send_button">Отправить</button>
+                    </div>
+                    
+                </div>
+
+                <div class="picture_content">
+                    <div class="picture_content_picture">
+                        <img id="picture" src="img/areas.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_area">
+                <div class="table_area_table">
+                    <table id="res_table">
+                        <thead>
+                            <tr>
+                                <th>x</th> 
+                                <th>y</th> 
+                                <th>R</th>
+                                <th>Попадание</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results">
+                            
+                        </tbody>
+
+                    </table>
+                </div>
+                
+            </div> 
+        </div>
+        
+        
+    </body>
+</html>
